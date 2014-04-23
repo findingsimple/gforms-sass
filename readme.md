@@ -14,6 +14,12 @@ Currently includes
 * first pass at scss conversion in the /scss directory
 * I've started grouping and spitting some the formsmain styles into smaller scss files.
 
+##Example Usage
+
+`sass --watch --style compressed forms.scss:forms.css`
+
+Will generate a compressed version of all front end styles into a single forms.css stylesheet
+
 ##To-dos
 
 * Implement sass variables (image folder location, font size etc.)
