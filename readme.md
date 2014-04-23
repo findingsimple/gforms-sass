@@ -25,4 +25,4 @@ Will generate a compressed version of all front end styles into a single forms.c
 * Implement sass variables (image folder location, font size etc.)
 * Give the default styles a good tidy and refactor without diverging from the default look and functionality
 * Restructure the scss files as necessary
-
+* Consistent syntax and coding standards
