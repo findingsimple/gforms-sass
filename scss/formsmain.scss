@@ -1,0 +1,390 @@
+/*
+----------------------------------------------------------------
+
+Gravity Forms Front End Form Styles
+Version 1.8
+http: //www.gravityforms.com
+updated: January 31, 2014 3:35 PM
+
+----------------------------------------------------------------
+*/
+
+.gform_wrapper{
+	overflow: inherit;
+	margin: 10px 0;
+	max-width: 98%
+
+	h1,
+	h2,
+	h3 {
+		font-weight: normal;
+		border: none;
+		outline: none;
+		background: none;
+	}
+
+	:focus {
+		outline: 0;
+	}
+
+	form {
+		text-align: left;
+	}
+
+	input[type=text],
+	input[type=url],
+	input[type=email],
+	input[type=tel],
+	input[type=number],
+	input[type=password] {
+		outline-style: none;
+		font-size: 11px;
+		font-family: inherit;
+		padding: 5px 2px 5px 2px;
+		letter-spacing: normal;
+	}
+
+	input[type=image] {
+		border: none !important;
+		padding: 0 !important;
+		width: auto !important;
+	}
+
+	textarea {
+		outline-style: none;
+		font-size: 11px;
+		font-family: inherit;
+		letter-spacing: normal;
+		padding: 4px 2px 4px 2px;
+		resize: none;
+
+		&.textarea {
+			width: 63%;
+		}
+		&.small {
+			height: 80px;
+		}
+		&.medium {
+			height: 150px;
+		}
+		&.large {
+			height: 250px;
+		}
+	}
+
+	ul {
+		margin: 0 !important;
+		list-style-type: none;
+		text-indent: 0;
+
+		li.gfield {
+			clear: both;
+		}
+
+		&.right_label li,
+		&.left_label li {
+			margin-bottom: 14px;
+		}
+
+		li:before,
+		li:after,
+		&.gform_fields {
+			padding: 0;
+			margin: 0;
+			overflow: visible;
+		}
+	}
+
+	li,
+	form li {
+		margin-left: 0 !important;
+		list-style-type: none !important;
+		list-style-image: none !important;
+		list-style: none !important;
+		overflow: visible;
+	}
+
+	select {
+		font-size: 11px;
+		font-family: inherit;
+		padding: 5px 0 5px 0;
+		letter-spacing: normal;
+
+		option {
+			padding: 2px 2px;
+			display: block;
+		}
+	}
+
+	.inline {
+		display: inline !important;
+	}
+
+	.gform_heading {
+		width: 98%;
+		margin-bottom: 18px;
+
+		h3.gform_title {
+			font-weight: bold;
+			font-size: 1.3em;
+			letter-spacing: normal !important;
+			margin: 10px 0 6px 0;
+			width: 98%;
+		}
+
+		span.gform_description {
+			font-weight: normal;
+		}
+	}
+
+	.gfield_time_hour,
+	.gfield_time_minute,
+	.gfield_date_month,
+	.gfield_date_day,
+	.gfield_date_year {
+		width: 70px;
+		vertical-align: top;
+		display: -moz-inline-stack;
+		display: inline-block;
+		zoom: 1;
+
+		input {
+			width: 70% !important;
+		}
+	}
+
+	.gfield_date_month,
+	.gfield_date_day,
+	.gfield_date_year {
+		margin-right: 12px;
+		width: 50px;
+		float: left;
+
+		input {
+			width: 85% !important;
+		}
+	}
+
+	.gfield_date_dropdown_month,
+	.gfield_date_dropdown_day,
+	.gfield_date_dropdown_year {
+		vertical-align: top;
+		display: -moz-inline-stack;
+		display: inline-block;
+		zoom: 1;
+		margin-right: 6px;
+	}
+
+	.gfield_time_ampm {
+		vertical-align: top;
+		display: -moz-inline-stack;
+		display: inline-block;
+		zoom: 1;
+
+		select {
+			width: 60px !important;
+		}
+	}
+
+	.field_hover {
+		border: 1px dashed #2175A9;
+		cursor: pointer;
+	}
+
+	.field_selected {
+		background-color: #DFEFFF;
+		border: 1px solid #C2D7EF;
+	}
+
+	.field_name_first,
+	.field_name_last {
+		width: 50%;
+		float: left;
+	}
+
+	.ginput_left input:focus+label,
+	.ginput_right input:focus+label,
+	.ginput_full input:focus+label {
+		font-weight: bold;
+	}
+
+	.field_name_first input,
+	.ginput_complex .ginput_left input {
+		width: 95% !important;
+	}
+
+	.field_name_last input {
+		width: 93% !important;
+	}
+
+	.ginput_complex label,
+	.gfield_time_hour label,
+	.gfield_time_minute label,
+	.gfield_date_month label,
+	.gfield_date_day label,
+	.gfield_date_year label {
+		display: block;
+		margin: 3px 0;
+		font-size: 11px;
+		letter-spacing: 0.5pt;
+	}
+
+	.top_label {
+
+		input,
+		select {
+			
+			&.small {
+				width: 25%;
+			}
+			&.medium {
+				width: 47%;
+			}
+			&.large {
+				width: 99.2%;
+			}
+		}
+
+		input.medium {
+			padding-right: 2px;
+		}
+
+		textarea.textarea {
+			width: 99.2%;
+		}
+
+	}
+
+	.left_label,
+	.right_label {
+
+		input,
+		select {
+			&.small {
+				width: 15%;
+			}
+			&.medium {
+				width: 35%;
+			}
+			&.large {
+				width: 63%;
+			}
+		}
+		li {
+			margin-bottom: 14px;
+		}
+	}
+
+	.top_label .gfield_label {
+		margin: 10px 0 4px 0;
+		font-weight: bold;
+		display: -moz-inline-stack;
+		display: inline-block;
+		line-height: 1.3em;
+		clear: both;
+	}
+
+	.left_label .gfield_label,
+	.right_label .gfield_label {
+		float: left;
+		margin: 0 15px 0 0;
+		width: 29%;
+		font-weight: bold;
+	}
+
+	.right_label .gfield_label {
+		text-align: right;
+	}
+
+	.instruction {
+		font-size: 0.85em;
+		line-height: 1.5em;
+		clear: both;
+		font-family: sans-serif;
+		letter-spacing: normal;
+		display: block;
+		margin: 3px 0;
+	}
+
+	.left_label .instruction,
+	.right_label .instruction {
+		margin-left: 31%;
+	}
+
+	.description {
+		padding: 4px 0 8px 0;
+		font-size: 0.85em;
+		line-height: 1.5em;
+		clear: both;
+		font-family: sans-serif;
+		letter-spacing: normal;
+	}
+
+	.gform_footer {
+		padding: 16px 0 10px 0;
+		margin: 16px 0 0 0;
+		clear: both;
+
+		&.right_label,
+		&.left_label {
+			padding: 16px 0 10px 31%;
+		}
+
+		input.button,
+		input[type=submit] {
+			font-size: 1em;
+		}
+
+		input[type=image] {
+			padding: 0;
+			width: auto !important;
+			background: none !important;
+			border: none !important;
+		}
+	}
+
+	.gform_ajax_spinner {
+		padding-left: 10px;
+	}
+
+	.gf_submission_limit_message {
+		color: #790000;
+		font-size: 1.4em;
+	}
+
+}
+@import "formsmain/field-description";
+@import "formsmain/section-fields";
+@import "formsmain/complex-fields";
+@import "formsmain/validation-and-error";
+@import "formsmain/hidden-fields";
+@import "formsmain/radio-and-checkboxes";
+@import "formsmain/html-fields";
+@import "formsmain/datepicker";
+@import "formsmain/honey-pot";
+@import "formsmain/simple-captcha";
+@import "formsmain/math-challege";
+@import "formsmain/textarea-char-counter";
+@import "formsmain/pricing-fields";
+@import "formsmain/multi-page-paging";
+@import "formsmain/multi-page-progress-bar";
+@import "formsmain/multi-page-steps";
+@import "formsmain/password-strength-indicator";
+@import "formsmain/html-field-list-reset";
+@import "formsmain/list-fields";
+@import "formsmain/chosen";
+@import "formsmain/credit-card-icons";
+@import "formsmain/credit-card-fields";
+@import "formsmain/file-upload";
+
+.gform_delete {
+    vertical-align:middle;
+    cursor:pointer;
+}
+
+/* fix recaptcha line height issue ------------------------------------------------------*/
+
+body #content .entry-content .gform_wrapper form .gform_body .gform_fields .gfield .ginput_container #recaptcha_widget_div #recaptcha_area .recaptchatable tbody tr td .recaptcha_input_area,
+body .gform_wrapper form .gform_body .gform_fields .gfield .ginput_container #recaptcha_widget_div #recaptcha_area .recaptchatable tbody tr td .recaptcha_input_area {
+	line-height: 1em !important;
+}

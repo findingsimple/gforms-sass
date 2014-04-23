@@ -1,0 +1,30 @@
+.gform_wrapper {
+
+	.gfield_description {
+		font-size: 0.85em;
+		line-height: 1.5em;
+		clear: both;
+		font-family: sans-serif;
+		letter-spacing: normal;
+		padding: 10px 0 0 0;
+		width: 99.8%;
+	}
+	.top_label .gfield_description {
+		padding: 10px 0 0 0;
+	}
+
+	.left_label .gfield_description,
+	.right_label .gfield_description {
+		width: 63%;
+		margin-left: 31%;
+	}
+
+	.description_above .gfield_description {
+		padding: 0 0 10px 0;
+	}
+
+	.gfield_date_year+.gfield_description {
+		padding: 0;
+	}
+
+}

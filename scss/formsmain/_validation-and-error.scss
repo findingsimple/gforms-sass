@@ -1,0 +1,180 @@
+.gform_wrapper {
+
+	.gfield_required {
+		color: #790000;
+		margin-left: 4px;
+	}
+
+	li.gfield {
+
+		&.gfield_error,
+		&.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+			background-color: #FFDFE0;
+			margin-bottom: 6px !important;
+			padding: 6px 6px 4px 6px !important;
+			border-top: 1px solid #C89797;
+			border-bottom: 1px solid #C89797;		
+		}
+		&.gfield_creditcard_warning {
+			margin-bottom: 6px !important;
+			padding: 6px 6px 4px 6px !important;
+			border: 1px dashed #C89797;
+
+			div.gfield_creditcard_warning_message {
+				font-size:1em;
+				font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+				padding: 10px 20px 10px 45px;
+				min-height: 25px;
+				background-image: url(../images/stopbanner.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				background-color: #790000;
+				border-bottom: 1px solid #620101;
+				color: #FFF;
+				text-shadow: 0 1px 1px rgba(0,0,0,0.50);
+				line-height: 1.3em;
+				letter-spacing: 0.2pt;
+			}
+		}
+		+ li.gfield.gfield_creditcard_warning {
+			margin-top: 14px !important;
+		}
+		&.gfield_error.gfield_contains_required {
+			margin-top: 12px;
+			margin-bottom: 12px !important;
+			padding-left: 10px !important;
+
+			label.gfield_label,
+			div.ginput_container  {
+				margin-top: 12px;
+			}
+		}
+	}
+
+	.top_label {
+
+		.gfield_error {
+			width: 97%;
+
+			.ginput_container {
+				max-width: 99%;
+			}
+
+			input.large,
+			select.large,
+			textarea.textarea {
+				width: 100%;
+			}
+		}
+	}
+
+	.right_label,
+	.left_label {
+
+		.gfield_error {
+
+			input.large,
+			select.large,
+			textarea.textarea {
+				width: 66%;
+			}
+		}
+	}
+
+	div.validation_error {
+		color: #790000;
+		font-size: 1.2em;
+		font-weight: bold;
+		margin-bottom: 1.6em;
+	}
+
+	div.gf_page_steps+div.validation_error {
+		margin-top: 16px;
+	}
+
+	div.gfield_description.validation_error {
+		color: #790000;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 1.2em;
+		margin-bottom: 16px;
+	}
+
+	.validation_message {
+		color: #790000;
+		font-weight: bold;
+		letter-spacing: normal;
+	}
+
+	li.gfield_error {
+
+		input[type=text],
+		input[type=url],
+		input[type=email],
+		input[type=tel],
+		input[type=number],
+		input[type=password],
+		textarea {
+			border: 1px solid #790000;
+		}
+
+		div.ginput_complex.ginput_container label,
+		ul.gfield_checkbox,
+		ul.gfield_radio {
+			color: #790000;
+		}
+
+		.gfield_label {
+			color: #790000;
+		}
+
+		.ginput_complex {
+
+			.ginput_left,
+			.ginput_right {
+				width: 50%;
+			}
+
+			.ginput_left {
+
+				input[type=text],
+				input[type=url],
+				input[type=email],
+				input[type=tel],
+				input[type=number],
+				input[type=password] {
+					width: 90% !important;
+				}
+			}
+			.ginput_right {
+
+				input[type=text],
+				input[type=url],
+				input[type=email],
+				input[type=tel],
+				input[type=number],
+				input[type=password] {
+					width: 95% !important;
+				}
+			}
+		}
+	}
+
+	.top_label .gfield_description.validation_message,
+	.gfield_description.validation_message {
+		padding: 10px 0 !important;
+	}
+
+	.ginput_container + .gfield_description.validation_message {
+		margin-top: 6px;
+	}
+
+	.gfield_description + .gfield_description.validation_message {
+		margin-top: 6px;
+	}
+
+	.ginput_container.ginput_list + .gfield_description.validation_message {
+		margin-top: 0;
+	}
+
+}

@@ -1,0 +1,35 @@
+.gform_wrapper {
+
+	.gsection {
+		border-bottom: 1px dotted #CCC;
+		padding: 0 0 8px 0;
+		margin: 16px 0;
+		clear: both;
+
+		h2.gsection_title {
+			margin: 0 !important;
+			padding: 0 !important;
+			letter-spacing: normal !important;
+			font-weight: bold;
+			font-size: 1.3em;
+			width: 98%;
+		}
+		.gsection_description {
+			width: 98%;
+			font-size: 0.85em;
+			line-height: 1.5em;
+			clear: both;
+			font-family: sans-serif;
+			letter-spacing: normal;
+			padding: 4px 0 8px 0;
+		}
+	}
+	.left_label .gsection .gsection_description,
+	.right_label .gsection .gsection_description {
+		margin-left: 0;
+		padding-top: 4px;
+		padding-left: 0;
+		line-height: 1.5em;
+	}
+
+}

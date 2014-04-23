@@ -1,0 +1,16 @@
+.gform_wrapper {
+
+	.gform_fileupload_multifile .gform_drop_area {
+		padding: 25px;
+		border: 2px dashed #ddd;
+		text-align: center;
+		color: #aaa;
+		margin-bottom: 10px;
+	}
+
+}
+
+.right_label .gform_fileupload_multifile,
+.left_label .gform_fileupload_multifile {
+    margin-left: 31%;
+}

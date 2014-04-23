@@ -1,0 +1,69 @@
+.gform_wrapper {
+
+	.left_label,
+	.right_label {
+
+		ul.gfield_checkbox,
+		ul.gfield_radio {
+			margin-left: 32%;
+			overflow: hidden;
+		}
+
+	}
+
+	ul.right_label li,
+	form ul.right_label li,
+	ul.left_label li,
+	form ul.left_label li {
+
+		ul.gfield_radio li,
+		ul.gfield_checkbox li {
+			margin-bottom: 10px;
+		}
+	}
+
+	ul.gfield_checkbox,
+	ul.gfield_radio {
+		margin: 6px 0;
+		padding: 0;
+
+		li {
+			margin: 0 0 8px 0;
+			line-height: 1.3em;
+			position: relative;
+			padding: 0 !important;
+			overflow: hidden;
+
+			label {
+				display: block;
+				margin: 0 0 0 24px;
+				padding: 0;
+				width: auto;
+				line-height: 1.5;
+				vertical-align: top;
+			}
+
+			input[type=checkbox],
+			input[type=radio],
+			input {
+				float: left;
+				margin-top: 2px;
+				width: auto !important;
+			}
+
+			input[type=radio]:checked+label,
+			input[type=checkbox]:checked+label {
+			    font-weight: bold;
+			}
+		}
+	}
+	ul.gfield_radio li input {
+		&+input {
+			margin-left: 4px;
+		}
+		&[value=gf_other_choice] {
+			margin-right: 6px;
+			margin-top: 4px;
+		}
+	}
+}
